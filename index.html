@@ -71,7 +71,7 @@
             background: #555;
         }
         section {
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             margin: 2rem auto;
             max-width: 1100px;
             background: white;
@@ -80,8 +80,11 @@
         }
         section h2 {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             color: #4caf50;
+        }
+        section h3 {
+            margin-bottom: 0.5rem;
         }
         .projects {
             display: grid;
@@ -113,67 +116,73 @@
         <h1>Manoj Kumar Rayana</h1>
     </header>
     <nav>
-        <a href="#projects">Projects</a>
         <a href="#resume">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="hero">
         <h2>Welcome to My Portfolio</h2>
         <p>I am a Data Scientist and Software Engineer with expertise in building scalable systems, deploying ML models, and solving real-world challenges through innovation.</p>
         <div class="hero-buttons">
-            <a href="#projects">Explore Projects</a>
+            <a href="#resume">View Experience</a>
             <a href="#contact">Contact Me</a>
         </div>
     </div>
+    <section id="resume">
+        <h2>Experience</h2>
+        <div>
+            <h3>ML Engineer III - Contract | American Express | Phoenix, United States <span>Sep 2024 – Present</span></h3>
+            <p>Automated data workflows using Big Query and developed dashboards for data quality. Applied NLP for clustering, enhancing analysis accuracy by 40%.</p>
+        </div>
+        <div>
+            <h3>Research Volunteer | ASU | Phoenix, United States <span>Aug 2023 – Aug 2024</span></h3>
+            <p>Engineered features from 10M+ transactions, improving model accuracy by 20%. Deployed fraud detection models achieving 85% accuracy.</p>
+        </div>
+        <div>
+            <h3>Data Scientist (Intern) | Clarkston Consulting | Phoenix, United States <span>Jan 2023 – Apr 2023</span></h3>
+            <p>Designed KPIs and dashboards for supply chain insights. Used XGBoost to improve demand prediction by 30% and created a Streamlit dashboard.</p>
+        </div>
+        <div>
+            <h3>Senior Engineer | Adani Group | Ahmedabad, India <span>Jul 2018 – Jan 2022</span></h3>
+            <p>Developed dashboards and data pipelines, reducing fraud losses by 20%. Created scoring systems to enhance user verification accuracy by 25%.</p>
+        </div>
+    </section>
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
             <div class="project">
-                <h3>Fraud Detection System</h3>
-                <p><strong>Task:</strong> Identify fraudulent transactions from large datasets.</p>
-                <p><strong>Action:</strong> Built Random Forest and Logistic Regression models.</p>
-                <p><strong>Result:</strong> Achieved an 85% accuracy rate in fraud detection.</p>
+                <p>Fraud Detection System: Built Random Forest and Logistic Regression models to identify fraudulent transactions, achieving 85% accuracy.</p>
             </div>
             <div class="project">
-                <h3>Customer Satisfaction Predictor</h3>
-                <p><strong>Task:</strong> Predict customer satisfaction for a retail dataset.</p>
-                <p><strong>Action:</strong> Applied Genetic Algorithms to optimize feature selection.</p>
-                <p><strong>Result:</strong> Achieved a Kaggle score of 0.72.</p>
+                <p>Customer Satisfaction Predictor: Applied Genetic Algorithms to optimize feature selection, achieving a Kaggle score of 0.72.</p>
             </div>
             <div class="project">
-                <h3>Email Spam Classifier</h3>
-                <p><strong>Task:</strong> Classify emails as spam or non-spam.</p>
-                <p><strong>Action:</strong> Trained Random Forest and Naive Bayes models.</p>
-                <p><strong>Result:</strong> Achieved a 94% accuracy rate.</p>
+                <p>Email Spam Classifier: Trained Random Forest and Naive Bayes models to classify emails, achieving a 94% accuracy rate.</p>
             </div>
             <div class="project">
-                <h3>Time Series Analysis</h3>
-                <p><strong>Task:</strong> Forecast stock prices using time series data.</p>
-                <p><strong>Action:</strong> Implemented ARIMA and LSTM models.</p>
-                <p><strong>Result:</strong> Predicted stock trends with 92% accuracy.</p>
+                <p>Time Series Analysis: Implemented ARIMA and LSTM models to forecast stock prices, achieving 92% accuracy.</p>
             </div>
             <div class="project">
-                <h3>LLM Tuning</h3>
-                <p><strong>Task:</strong> Fine-tuned large language models for a customer-specific NLP solution.</p>
-                <p><strong>Action:</strong> Built a custom training pipeline using PyTorch and Hugging Face Transformers.</p>
-                <p><strong>Result:</strong> Improved task-specific accuracy by 15% compared to pre-trained models.</p>
+                <p>LLM Tuning: Fine-tuned large language models with custom pipelines, improving task-specific accuracy by 15%.</p>
             </div>
             <div class="project">
-                <h3>Retrieval-Augmented Generation (RAG)</h3>
-                <p><strong>Task:</strong> Develop a document retrieval and summarization system for enterprise use.</p>
-                <p><strong>Action:</strong> Integrated Elasticsearch with OpenAI GPT models for question-answering tasks.</p>
-                <p><strong>Result:</strong> Reduced information retrieval time by 40% for customer service agents.</p>
+                <p>Retrieval-Augmented Generation (RAG): Integrated Elasticsearch with GPT models, reducing information retrieval time by 40%.</p>
             </div>
         </div>
     </section>
-    <section id="resume">
-        <h2>Experience Highlights</h2>
-        <ul>
-            <li><strong>ML Engineer III</strong> at American Express: Automated workflows, built dashboards, and applied NLP techniques.</li>
-            <li><strong>Research Volunteer</strong> at ASU: Improved fraud detection accuracy with advanced machine learning techniques.</li>
-            <li><strong>Senior Engineer</strong> at Adani Group: Built dashboards and pipelines to reduce global fraud losses by 20%.</li>
-            <li><strong>Data Scientist (Intern)</strong> at Clarkston Consulting: Created predictive dashboards for supply-chain insights, improving demand prediction by 30%.</li>
-        </ul>
+    <section id="education">
+        <h2>Education</h2>
+        <div>
+            <h3>W. P. Carey School of Business, Arizona State University, Tempe, AZ <span>Aug 2022 – May 2023</span></h3>
+            <p>Master of Science in Business Data Analytics, GPA: 4.0/4.0</p>
+            <p>Relevant Coursework: Deep Learning, Text Mining, Analytical Decision Modeling, Marketing Analytics</p>
+        </div>
+        <div>
+            <h3>Indian Institute of Technology, Dhanbad, India <span>May 2018</span></h3>
+            <p>Bachelor of Technology in Engineering (Minor in Statistical Engineering), GPA: 7.76/10</p>
+            <p>Relevant Coursework: Data Analytics, Predictive Modeling, Statistics, Deep Learning</p>
+        </div>
     </section>
     <section id="contact">
         <h2>Contact</h2>
