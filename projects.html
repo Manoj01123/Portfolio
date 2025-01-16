@@ -3,127 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manoj Kumar Rayana | Portfolio</title>
+    <title>Manoj Rayana | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #333;
+            color: #fff;
         }
         header {
-            background: #4caf50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 1rem 2rem;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
+            color: #fff;
         }
         nav {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            background: #333;
-            padding: 1rem;
+            gap: 1.5rem;
         }
         nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
+            font-size: 1rem;
             font-weight: bold;
-            font-size: 1.2rem;
         }
         nav a:hover {
             text-decoration: underline;
         }
         .hero {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: #4caf50;
-            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 2rem;
+            background-color: #444;
         }
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+        .hero-text {
+            max-width: 50%;
         }
-        .hero p {
+        .hero-text h2 {
+            font-size: 3rem;
+            margin: 0;
+            color: #4caf50;
+            border-left: 4px solid #4caf50;
+            padding-left: 1rem;
+        }
+        .hero-text p {
             font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 1rem 0;
         }
         .hero-buttons {
-            margin-top: 2rem;
+            margin-top: 1.5rem;
         }
         .hero-buttons a {
-            display: inline-block;
-            margin: 0.5rem;
-            padding: 0.8rem 1.5rem;
-            color: white;
-            background: #333;
-            border-radius: 5px;
+            background: #4caf50;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            margin-right: 1rem;
+            display: inline-block;
         }
         .hero-buttons a:hover {
-            background: #555;
+            background: #45a049;
+        }
+        .hero img {
+            max-width: 40%;
+            border-radius: 10px;
         }
         section {
-            padding: 3rem 1rem;
-            margin: 2rem auto;
-            max-width: 1100px;
-            background: white;
+            padding: 3rem 2rem;
+            background: #555;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem;
         }
         section h2 {
+            color: #4caf50;
             text-align: center;
             margin-bottom: 2rem;
-            color: #4caf50;
         }
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
         .project {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            background: #f9f9f9;
+            background: #666;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .project h3 {
-            color: #333;
             margin-top: 0;
+            color: #4caf50;
         }
         footer {
             text-align: center;
-            background: #4caf50;
-            color: white;
             padding: 1rem;
+            background: #222;
+            color: #fff;
             margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Manoj Kumar Rayana</h1>
+        <h1>Manoj Rayana</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Experience Highlights</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <div class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am a Data Scientist and Software Engineer with expertise in building scalable systems, deploying ML models, and solving real-world challenges through innovation.</p>
-        <div class="hero-buttons">
-            <a href="#projects">Explore Projects</a>
-            <a href="#contact">Contact Me</a>
+        <div class="hero-text">
+            <h2>My Portfolio</h2>
+            <p>Hi, I'm Manoj Rayana, a passionate Data Scientist and Software Engineer. I specialize in building scalable systems, deploying ML models, and solving real-world challenges with innovative solutions.</p>
+            <div class="hero-buttons">
+                <a href="#projects">Explore Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
         </div>
+        <img src="profile-image.png" alt="Manoj Rayana">
     </div>
     <section id="projects">
         <h2>Projects</h2>
@@ -147,22 +155,22 @@
                 <p><strong>Result:</strong> Achieved a 94% accuracy rate.</p>
             </div>
             <div class="project">
+                <h3>Content Moderation System</h3>
+                <p><strong>Task:</strong> Moderate and flag inappropriate content.</p>
+                <p><strong>Action:</strong> Used BERT embeddings for text classification.</p>
+                <p><strong>Result:</strong> Achieved an F1 score of 0.74.</p>
+            </div>
+            <div class="project">
                 <h3>Time Series Analysis</h3>
                 <p><strong>Task:</strong> Forecast stock prices using time series data.</p>
                 <p><strong>Action:</strong> Implemented ARIMA and LSTM models.</p>
                 <p><strong>Result:</strong> Predicted stock trends with 92% accuracy.</p>
             </div>
             <div class="project">
-                <h3>LLM Tuning</h3>
-                <p><strong>Task:</strong> Fine-tuned large language models for a customer-specific NLP solution.</p>
-                <p><strong>Action:</strong> Built a custom training pipeline using PyTorch and Hugging Face Transformers.</p>
-                <p><strong>Result:</strong> Improved task-specific accuracy by 15% compared to pre-trained models.</p>
-            </div>
-            <div class="project">
-                <h3>Retrieval-Augmented Generation (RAG)</h3>
-                <p><strong>Task:</strong> Develop a document retrieval and summarization system for enterprise use.</p>
-                <p><strong>Action:</strong> Integrated Elasticsearch with OpenAI GPT models for question-answering tasks.</p>
-                <p><strong>Result:</strong> Reduced information retrieval time by 40% for customer service agents.</p>
+                <h3>XGBoost for Demand Forecasting</h3>
+                <p><strong>Task:</strong> Forecast demand for a supply chain client.</p>
+                <p><strong>Action:</strong> Utilized XGBoost to predict demand levels.</p>
+                <p><strong>Result:</strong> Improved forecasting accuracy by 30%.</p>
             </div>
         </div>
     </section>
@@ -175,15 +183,8 @@
             <li><strong>Data Scientist (Intern)</strong> at Clarkston Consulting: Created predictive dashboards for supply-chain insights, improving demand prediction by 30%.</li>
         </ul>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:manojkumar.rayana@gmail.com">manojkumar.rayana@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/manojkumar-rayana" target="_blank">linkedin.com/in/manojkumar-rayana</a></p>
-        <p>GitHub: <a href="https://github.com/manojrayana" target="_blank">github.com/manojrayana</a></p>
-        <p>Medium: <a href="https://medium.com/@manojkumar.rayana/hypothesis-testing-basics-for-data-scientist-entry-level-interview-d973e90ec819" target="_blank">View my Medium articles</a></p>
-    </section>
     <footer>
-        <p>&copy; 2025 Manoj Kumar Rayana. All rights reserved.</p>
+        <p>&copy; 2025 Manoj Rayana. All rights reserved.</p>
     </footer>
 </body>
 </html>
