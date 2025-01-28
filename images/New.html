@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Kumar Rayana | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #4caf50;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-buttons {
+            margin-top: 2rem;
+        }
+        .hero-buttons a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            background: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero-buttons a:hover {
+            background: #555;
+        }
+        section {
+            padding: 2rem 1rem;
+            margin: 2rem auto;
+            max-width: 1100px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #4caf50;
+        }
+        .experience, .projects, .education, .skills {
+            margin-bottom: 2rem;
+        }
+        .experience h3, .projects h3, .education h3 {
+            margin-bottom: 0.5rem;
+            color: #4caf50;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manoj Kumar Rayana</h1>
+    </header>
+    <nav>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am a Data Scientist and AI/ML Engineer with over 8 years of experience in building scalable systems, deploying ML models, and solving real-world challenges through innovation.</p>
+        <div class="hero-buttons">
+            <a href="#experience">View Experience</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </div>
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div>
+            <h3>Data Scientist/AI Engineer | American Express, Boston, MA <span>Jun 2023 – Dec 2024</span></h3>
+            <ul>
+                <li>Designed and deployed chatbots using OpenAI and Llama, improving model accuracy by 25%.</li>
+                <li>Optimized ML workflows using MLOps tools like Kubeflow, reducing deployment time by 40%.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Data Scientist | State Street, Boston, MA <span>Jan 2023 – May 2023</span></h3>
+            <ul>
+                <li>Implemented ARIMA and LSTM models for time series analysis, improving forecasting accuracy by 20%.</li>
+                <li>Built Tableau dashboards for data visualization, enhancing insights into customer behavior.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Senior Data Scientist | Adani Enterprises, India <span>Aug 2019 – Jul 2022</span></h3>
+            <ul>
+                <li>Developed NLP solutions for sentiment analysis using TensorFlow and PyTorch.</li>
+                <li>Streamlined ETL pipelines with PySpark, ensuring 99.9% data consistency.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Fraud Detection System</h3>
+            <p>Built models to identify fraudulent transactions, achieving 85% accuracy using Random Forest and Logistic Regression.</p>
+        </div>
+        <div>
+            <h3>Customer Satisfaction Predictor</h3>
+            <p>Applied Genetic Algorithms to optimize feature selection, achieving a Kaggle score of 0.72.</p>
+        </div>
+        <div>
+            <h3>Time Series Analysis</h3>
+            <p>Forecasted stock prices using ARIMA and LSTM models, achieving 92% accuracy.</p>
+        </div>
+        <div>
+            <h3>LLM Tuning</h3>
+            <p>Fine-tuned large language models with custom pipelines, improving task-specific accuracy by 15%.</p>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div>
+            <h3>Master’s in Business Data Analytics | Arizona State University, Tempe, AZ <span>2023</span></h3>
+            <p>GPA: 4.0/4.0</p>
+        </div>
+        <div>
+            <h3>B.Tech in Engineering | IIT Dhanbad, India <span>2016</span></h3>
+            <p>CGPA: 9.1/10</p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, SQL, Spark SQL</li>
+            <li>ML Frameworks: TensorFlow, PyTorch, Scikit-learn</li>
+            <li>Cloud Platforms: AWS, Azure, GCP</li>
+            <li>Data Visualization: Tableau, Power BI</li>
+            <li>Certifications: AWS Data Analytics, Deep Learning.AI</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:manojrayana62@gmail.com">manojrayana62@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/manojkumar-rayana" target="_blank">linkedin.com/in/manojkumar-rayana</a></p>
+        <p>GitHub: <a href="https://github.com/manojrayana" target="_blank">github.com/manojrayana</a></p>
+        <p>Medium: <a href="https://medium.com/@manojkumar.rayana" target="_blank">View my Medium articles</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Manoj Kumar Rayana. All rights reserved.</p>
+    </footer>
+</body>
+</html>
